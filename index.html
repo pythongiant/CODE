@@ -13,9 +13,7 @@
   <div>Contact</div>
 </div> 
 <Script>
-
 window.onscroll = function() {
-
     console.log(document.body.scrollTop)
   if (document.documentElement.scrollTop > 20 ) {
     document.getElementById("navbar").style.top = "0";
@@ -26,20 +24,33 @@ window.onscroll = function() {
 
 <div id = "bg-full" >
 <Div  id="center-text-start" style="font-size: 4em;"><h1 >CODE</h1></div>
-<div id="center-text-start"><h4 > <span id="ityped"></span></h4></div>
-
+<div id="center-text-start" style="width:50%;"><h4 > <span id="ityped" ></span></h4></div>
+  <canvas class="background"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 </div>
 <div id="intro">
-<div><i>Delhi- NCR's biggest Tech Synopsium</i></div>
-<div>CODE is </div>
 
-<div>papap</div>
+<div>Code is an annual IT symposium hosted by Apeejay School, Noida. Ever since our founding in 1999 we have retained the position of Delhi-NCR's most awaited IT symposium. With over 50 schools from across Delhi-NCR, we make it bigger and better each year. </div>
+
+<div>A team of skilled, dextrous and technologically enthusiastic students, the constituents of CODE club, become the reason behind the grand success of CODE every year. CODE Club was started in Apeejay School Noida by its computer department with a group of 6 students in 1999 with a motive of excelling in the field of computers under the visionary support of late Dr. Stya Paul and technical expertise of Mrs. Sushma Berlia, President, Apeejay Education Society.</div>
+<div><strong><i>Technologically Curious?</i></strong></div>
+</div>
+<center>
+<div id="intro2">
+
+<div><h1>80+</h1><br> Members</div>
+<div><h1>50+ </h1><br>Schools</div>
+
+<div><h1>900+</h1><br> Participants</div>
+<div><h1>20+</h1><br> Awards</div>
+
 
 </div>
+</center>
 </body>
 <Script>
 ityped.init('#ityped', {
-    strings:['Vini Vidi Vici'],
+    strings:['Veni Vidi Vici'],
     startDelay: 700,
     
     disableBackTyping: true,
@@ -50,4 +61,10 @@ ityped.init('#ityped', {
   });
   
   </script>
+  <div id ="events">
+
+  <div class="event"></div>
+  <div class="event"></div>
+  <div class="event"></div>
+  </div>
 </html>
