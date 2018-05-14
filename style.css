@@ -63,17 +63,19 @@ body,html{
     display: flex;
     font-size:1.1em;
     flex-wrap: wrap;
+    padding:2vh;
 }
 #intro div{
-    padding:5vh;
-    width:50vw;
+    padding:1.5vh;
+    width:23vw;
 }
 #intro2{
     display: flex;
     font-size: 120%;
     flex-wrap: wrap;
-    background-color: grey;
+    background-color: #393e46;
     color:white;
+    
 }
 #intro2 div{
     padding:5vh;
@@ -82,6 +84,28 @@ body,html{
 #intro2 div:hover{
     font-size:1.3em;
     transition: all .2s;
+}
+
+#intro3{
+    display: flex;
+    font-size:1.1em;
+    flex-wrap: wrap;
+    padding:2vh;
+    
+}
+.event{
+    background-image: url("assets/webd.jpg");
+    background-size: cover;
+    width:25%;
+    color:white;
+    height:30vh;
+    padding:2vh;
+    width:22.5vw;
+    transition: all 0.3s;
+}
+.event p{
+    color:black;
+    font-size: 1.2em;
 }
 #navbar {
     display: flex;
@@ -96,6 +120,7 @@ body,html{
 }
 #navbar div{
     padding:15px;
+    transition: all .2s;
 }
 
 
@@ -103,9 +128,8 @@ body,html{
     background-color: #EEE;
     color: black;
     cursor: pointer;
-    transition: all .2s;
+    
 }
-#events{
-    display: flex;
-    flex-wrap: wrap;
+.overlay{
+    display: none;
 }

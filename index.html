@@ -3,14 +3,16 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
 <link rel= "stylesheet" href="style.css"/>
 <script src="script.js"></script>
 </head>
 <body> <div id="navbar">
-  <div>Home</div>
-  <Div>News</div>
-  <div>Contact</div>
+  <div onclick="    $('html, body').animate({   scrollTop: $('#bg-full').offset().top }, 1000);">Home</div>
+  <Div onclick="    $('html, body').animate({   scrollTop: ($('#intro').offset().top)-20 }, 1000);">About Us</div>
+  <div onclick="    $('html, body').animate({   scrollTop: ($('#intro3').offset().top)-20 }, 1000);">Events</div>
 </div> 
 <Script>
 window.onscroll = function() {
@@ -20,16 +22,39 @@ window.onscroll = function() {
   } else {
     document.getElementById("navbar").style.top = "-50px";
   }
-} </script>
+} 
+$(document).ready(function(){
+   $(".event").hover(function(){
+     console.log("Harmabe")
+     $(".overlay").fadeToggle();
+   }); 
+});
+</script>
 
 <div id = "bg-full" >
 <Div  id="center-text-start" style="font-size: 4em;"><h1 >CODE</h1></div>
 <div id="center-text-start" style="width:50%;"><h4 > <span id="ityped" ></span></h4></div>
+<script>
+  ityped.init('#ityped', {
+    strings:['Veni Vidi Vici'],
+    startDelay: 700,
+    
+    disableBackTyping: true,
+    typeSpeed: 600,
+    
+    showCursor:true,
+    loop: false
+  });
+  </script>
   <canvas class="background"></canvas>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 </div>
 <div id="intro">
 
+<div style="padding:2em">
+<h1 >Code</h1>
+<hr width="50%">
+</div>
 <div>Code is an annual IT symposium hosted by Apeejay School, Noida. Ever since our founding in 1999 we have retained the position of Delhi-NCR's most awaited IT symposium. With over 50 schools from across Delhi-NCR, we make it bigger and better each year. </div>
 
 <div>A team of skilled, dextrous and technologically enthusiastic students, the constituents of CODE club, become the reason behind the grand success of CODE every year. CODE Club was started in Apeejay School Noida by its computer department with a group of 6 students in 1999 with a motive of excelling in the field of computers under the visionary support of late Dr. Stya Paul and technical expertise of Mrs. Sushma Berlia, President, Apeejay Education Society.</div>
@@ -46,25 +71,25 @@ window.onscroll = function() {
 
 
 </div>
+<div style="padding:2em">
+<h1 >Events</h1>
+<hr width="50%">
+</div>
 </center>
-</body>
-<Script>
-ityped.init('#ityped', {
-    strings:['Veni Vidi Vici'],
-    startDelay: 700,
-    
-    disableBackTyping: true,
-    typeSpeed: 600,
-    
-    showCursor:true,
-    loop: false
-  });
-  
-  </script>
-  <div id ="events">
 
-  <div class="event"></div>
-  <div class="event"></div>
-  <div class="event"></div>
-  </div>
+<div id="intro3">
+
+
+<div class="event"><div class="overlay"><h1 >Web Design</h1><br><p> IX-XII</p></div></div>
+<div class="event"><div class="overlay"><h1 >Web Design</h1><br><p> IX-XII</p></div></div>
+<div class="event"><div class="overlay"><h1 >Web Design</h1><br><p> IX-XII</p></div></div>
+<div class="event"><div class="overlay"><h1 >Web Design</h1><br><p> IX-XII</p></div></div>
+<div class="event"><div class="overlay"><h1 >Web Design</h1><br><p> IX-XII</p></div></div>
+<div class="event"><div class="overlay"><h1 >Web Design</h1><br><p> IX-XII</p></div></div>
+<div class="event"><div class="overlay"><h1 >Web Design</h1><br><p> IX-XII</p></div></div>
+<div class="event"><div class="overlay"><h1 >Web Design</h1><br><p> IX-XII</p></div></div>
+
+</div>
+  </body>
+
 </html>
